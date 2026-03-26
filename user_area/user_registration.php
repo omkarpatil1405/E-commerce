@@ -96,12 +96,12 @@ include('../functions/common_function.php');
    else{
     // insert_query
    move_uploaded_file($user_image_tmp,"./user_images/$user_image");
-   $insert_query="insert into  `user_table` (username,user_email,user_password,user_image,user_ip,user_address,user_mobile) values ('$user_username','$user_email','$hash_password','$user_image','$user_ip','$user_address',' $user_contact')";
+   $insert_query="insert into  `user_table` (username,user_email,user_password,user_image,user_ip,user_address,user_mobile) values ('$user_username','$user_email','$hash_password','$user_image','$user_ip','$user_address','$user_contact')";
    $sql_execute=mysqli_query($con,$insert_query);
-   }
    if($sql_execute){
     echo "<script>alert('Registeration Done Successfully')</script>";
     echo "<script>window.open('../index.php','_self')</script>";
+   }
    }
 
   }

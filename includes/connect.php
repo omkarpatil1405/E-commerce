@@ -2,7 +2,7 @@
 
 $con=mysqli_connect('localhost','root','','mystore');
 if(!$con){
-    die(mysqli_error($conn));
+    die(mysqli_error($con));
 }
 
 ?>

@@ -50,7 +50,7 @@ if(isset($_POST['insert_product'])){
 
         // Insert product into the database
         $insert_products = "INSERT INTO `products` 
-                            (product_title, product_description, product_keyword, category_id, brand_id, product_image1, product_image2, product_image3, product_price)
+                            (product_title, product_description, product_keyword, category_id, brand_id, product_image1, product_image2, product_image3,product_price)
                             VALUES ('$product_title', '$product_description', '$product_keywords', '$product_category', '$product_brand', '$product_image1', '$product_image2', '$product_image3', '$product_price')";
 
         $result_query = mysqli_query($con, $insert_products);

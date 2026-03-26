@@ -42,7 +42,7 @@ if(isset($_GET['edit_account'])){
 <body>
   
    <h3 class="text-success mb-4">Edit Account</h3>
-   <form action="" method="post" enctype="multipath/form-data" class="text-center">
+   <form action="" method="post" enctype="multipart/form-data" class="text-center">
     <div class="form-outline mb-4">
         <input type="text" class="form-control w-50 m-auto" name="user_username" value="<?php echo $username ?>">
     </div>

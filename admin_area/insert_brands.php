@@ -4,7 +4,7 @@
 include('../includes/connect.php');
 if(isset($_POST['insert_brand'])){
     $brand_title=$_POST['brand_title'];
-    $select_query="SELECT * from `brands` WHERE brand_title='$brand_title''s'";
+    $select_query="SELECT * from `brands` WHERE brand_title='$brand_title'";
     $result_select=mysqli_query($con,$select_query);
     $number=mysqli_num_rows($result_select);
     if($number>0){

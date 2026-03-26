@@ -82,7 +82,7 @@ session_start();
             <a href="#"><img src="../images/images.jpg" alt="" class="admin_image"></a>
             <p class="text-light text-center"> 
                 <?php
-                 echo "{$_SESSION['admin_name']}";
+                 echo isset($_SESSION['admin_name']) ? $_SESSION['admin_name'] : 'Guest';
                  ?></p>
         </div>
         <div class=" text-center">

@@ -37,7 +37,7 @@
                 <td class='bg-light'><img src='../user_area/user_images/$user_image' alt='$username' class='product_img'></td>
                 <td class='bg-light'>$user_address</td>
                 <td class='bg-light'>$user_mobile</td>
-                <tr>";
+                </tr>";
             } 
         
         

@@ -82,10 +82,10 @@ include('../functions/common_function.php');
     // insert_query
    $insert_query="INSERT INTO  `admin` (admin_name,admin_email,admin_password) values ('$admin_name','$admin_email','$hash_password')";
    $sql_execute=mysqli_query($con,$insert_query);
-   }
    if($sql_execute){
     echo "<script>alert('Registeration Done Successfully')</script>";
     echo "<script>window.open('../index.php','_self')</script>";
+   }
    }
 
   }
